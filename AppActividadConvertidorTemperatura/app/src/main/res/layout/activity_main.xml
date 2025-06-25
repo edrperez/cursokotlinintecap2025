@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir temperatura"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvUnidadActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celsius (°C) → Fahrenheit (°F)"
+        android:textSize="16sp"
+        android:textColor="#2196F3"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Toca arriba para cambiar)"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa la temperatura:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etTemperatura"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="Ej: 25, 0, -10"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center" />
+
+</LinearLayout>
